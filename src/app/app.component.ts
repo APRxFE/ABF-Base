@@ -1,20 +1,9 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { Router } from '@angular/router'
 
-declare var jQuery
-
-
 @Component({
-	selector: 'app-root',
-	template: `<router-outlet></router-outlet>`
+  selector: 'app-root',
+  templateUrl: './app.component.html'
 })
-export class AppComponent implements OnInit {
-
-	constructor(
-		private router: Router
-	){}
-
-	ngOnInit() {
-	}
-
+export class AppComponent {
 }
