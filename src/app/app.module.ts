@@ -9,13 +9,20 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { environment } from '../environments/environment' // Firebase Config
 
 import { FireCorxModule } from '../../ngModules/FireCorx'
+import { TestCorxModule } from '../../ngModules/TestCorx'
 
-let modules = [
+let modules: any[] = [
 	BrowserModule, FormsModule, HttpModule, RouterModule,
 	NgbModule.forRoot(),
-	//FireCorxModule.initializeApp( environment.firebase )
 	FireCorxModule
 ]
+
+// FireCorxModule 
+if(modules.indexOf(FireCorxModule) > -1){
+	modules.push(...[
+		TestCorxModule
+	])
+}
 
 import { AppComponent } from './app.component'
 
@@ -28,8 +35,8 @@ let pages = [
 import { routing } from './app.routes'
 
 @NgModule({
-		bootstrap: [AppComponent],
-		declarations: [ AppComponent, ...pages ],
-		imports: [ ...modules, routing ]
+	bootstrap: [AppComponent],
+	declarations: [ AppComponent, ...pages ],
+	imports: [ ...modules, routing ]
 })
-export class AppModule { }
+export class AppModule {}
