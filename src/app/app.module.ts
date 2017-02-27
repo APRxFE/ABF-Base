@@ -14,15 +14,11 @@ import { TestCorxModule } from '../../ngModules/TestCorx'
 let modules: any[] = [
 	BrowserModule, FormsModule, HttpModule, RouterModule,
 	NgbModule.forRoot(),
-	FireCorxModule
-]
+	FireCorxModule,
 
-// FireCorxModule 
-if(modules.indexOf(FireCorxModule) > -1){
-	modules.push(...[
-		TestCorxModule
-	])
-}
+	// ↓ FireCorxModule +
+	TestCorxModule
+]
 
 import { AppComponent } from './app.component'
 
