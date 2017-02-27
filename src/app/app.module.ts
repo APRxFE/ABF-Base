@@ -9,15 +9,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 import { environment } from '../environments/environment' // Firebase Config
 
 import { FireCorxModule } from '../../ngModules/FireCorx'
-import { TestCorxModule } from '../../ngModules/TestCorx'
 
 let modules: any[] = [
 	BrowserModule, FormsModule, HttpModule, RouterModule,
 	NgbModule.forRoot(),
-	FireCorxModule,
+	FireCorxModule
 
 	// ↓ FireCorxModule &
-	TestCorxModule
+	//TestCorxModule
 ]
 
 import { AppComponent } from './app.component'
