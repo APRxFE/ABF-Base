@@ -1,18 +1,20 @@
+import 'rxjs/Rx'
+
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { HttpModule, Http } from '@angular/http'
 import { RouterModule } from '@angular/router'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
-//import { AlertModule, DatepickerModule } from 'ng2-bootstrap'
-//import { AngularFireModule, FirebaseAppConfig } from 'angularfire2'
 import { environment } from '../environments/environment' // Firebase Config
 
+import { FireCorxModule } from '../../ngModules/FireCorx'
+
 let modules = [
-  //AlertModule, DatepickerModule,
-  BrowserModule, FormsModule, HttpModule, RouterModule,
-  NgbModule.forRoot()
-  //AngularFireModule.initializeApp( environment.firebase )
+	BrowserModule, FormsModule, HttpModule, RouterModule,
+	NgbModule.forRoot(),
+	//FireCorxModule.initializeApp( environment.firebase )
+	FireCorxModule
 ]
 
 import { AppComponent } from './app.component'
@@ -20,14 +22,14 @@ import { AppComponent } from './app.component'
 import { HomePage } from './pages/home/home'
 
 let pages = [
-  HomePage
+	HomePage
 ]
 
 import { routing } from './app.routes'
 
 @NgModule({
-  bootstrap: [AppComponent],
-  declarations: [ AppComponent, ...pages ],
-  imports: [ ...modules, routing ]
+		bootstrap: [AppComponent],
+		declarations: [ AppComponent, ...pages ],
+		imports: [ ...modules, routing ]
 })
 export class AppModule { }
