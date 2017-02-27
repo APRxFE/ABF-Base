@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { HttpModule, Http } from '@angular/http'
 import { RouterModule } from '@angular/router'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 //import { AlertModule, DatepickerModule } from 'ng2-bootstrap'
 //import { AngularFireModule, FirebaseAppConfig } from 'angularfire2'
 import { environment } from '../environments/environment' // Firebase Config
 
 let modules = [
   //AlertModule, DatepickerModule,
-  BrowserModule, FormsModule, HttpModule, RouterModule
+  BrowserModule, FormsModule, HttpModule, RouterModule,
+  NgbModule.forRoot()
   //AngularFireModule.initializeApp( environment.firebase )
 ]
 
