@@ -8,8 +8,6 @@ export class TestCorx {
 	constructor(
 		public fireCorx: FireCorx,
 		private _zone: NgZone
-	){
-		console.log(this.fireCorx.rdb)
-	}
+	){}
 
 }

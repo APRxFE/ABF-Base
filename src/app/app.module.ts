@@ -16,7 +16,7 @@ let modules: any[] = [
 	NgbModule.forRoot(),
 	FireCorxModule,
 
-	// ↓ FireCorxModule +
+	// ↓ FireCorxModule &
 	TestCorxModule
 ]
 
