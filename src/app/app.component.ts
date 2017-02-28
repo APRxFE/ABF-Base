@@ -3,7 +3,7 @@ import * as Rx from 'rxjs'
 import { Component } from '@angular/core'
 import { Router } from '@angular/router'
 
-import { TestCorx } from '../../ngModules/TestCorx'
+import { FireCorx } from '../../ngModules/FireCorx'
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,6 @@ import { TestCorx } from '../../ngModules/TestCorx'
 export class AppComponent {
 
 	constructor(
-		public testCorx: TestCorx
+		fireCorx: FireCorx
 	){}	
 }
