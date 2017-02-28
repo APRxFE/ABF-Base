@@ -15,5 +15,7 @@ export class AppComponent {
 	constructor(
 		public fireCorx: FireCorx,
 		public castlotsCorx: CastlotsCorx
-	) {}	
+	) {
+		//this.fireCorx.appStartRx.subscribe(d=>console.log(d))
+	}
 }

@@ -16,7 +16,9 @@ export class HomePage implements OnInit, OnDestroy {
 	constructor(
 		public fireCorx: FireCorx,
 		public castlotsCorx: CastlotsCorx 		
-	) {}
+	) {
+		
+	}
 
 	public ngOnInit() {
 	}

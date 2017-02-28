@@ -1,1 +1,7 @@
 <router-outlet></router-outlet>
+
+<template [ngIf]="fireCorx.isAuthLoad">
+	<div class="appLoading">
+		Loading ....
+	</div>
+</template>

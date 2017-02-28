@@ -1,12 +1,6 @@
-<template [ngIf]="fireCorx.isAuthLoad">
-	Loading ..
+<template [ngIf]="!fireCorx.isAuth">
+	<button type="button" class="btn" (click)="fireCorx.login('google')">Login</button>
 </template>
-
-<template [ngIf]="!fireCorx.isAuthLoad">
-	<template [ngIf]="!fireCorx.isAuth">
-		<button type="button" class="btn" (click)="fireCorx.login('google')">Login</button>
-	</template>
-	<template [ngIf]="fireCorx.isAuth">
-		<button type="button" class="btn" (click)="fireCorx.logout()">Logout</button>
-	</template>
+<template [ngIf]="fireCorx.isAuth">
+	<button type="button" class="btn" (click)="fireCorx.logout()">Logout</button>
 </template>
