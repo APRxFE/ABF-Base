@@ -1,1 +1,6 @@
-<h1>HOME</h1>
+<template [ngIf]="!fireCorx.isAuth">
+	<button type="button" class="btn" (click)="fireCorx.login('google')">Login</button>
+</template>
+<template [ngIf]="fireCorx.isAuth">
+	<button type="button" class="btn" (click)="fireCorx.logout()">Logout</button>
+</template>

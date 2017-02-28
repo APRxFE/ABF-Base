@@ -1,7 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core'
 
+import { FireCorx } from '../../../../ngModules/FireCorx'
 
-declare var jQuery
+//declare var jQuery
 
 
 @Component({
@@ -12,7 +13,10 @@ declare var jQuery
 export class HomePage implements OnInit, OnDestroy {
 
 	constructor(
-	){}
+		public fireCorx: FireCorx
+	) {
+		
+	}
 
 	public ngOnInit() {
 	}

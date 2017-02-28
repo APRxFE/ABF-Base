@@ -12,6 +12,8 @@ import { FireCorx } from '../../ngModules/FireCorx'
 export class AppComponent {
 
 	constructor(
-		fireCorx: FireCorx
-	){}	
+		public fireCorx: FireCorx
+	) {
+		//this.fireCorx.appStartRx.subscribe(d=>console.log(d))
+	}
 }

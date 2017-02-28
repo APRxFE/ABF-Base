@@ -13,10 +13,10 @@ import { FireCorxModule } from '../../ngModules/FireCorx'
 let modules: any[] = [
 	BrowserModule, FormsModule, HttpModule, RouterModule,
 	NgbModule.forRoot(),
-	FireCorxModule,
+	FireCorxModule
 
-	// ↓ FireCorxModule +
-	//TestCorxModule
+	// ↓ FireCorxModule &
+	//CastlotsCorxModule
 ]
 
 import { AppComponent } from './app.component'
