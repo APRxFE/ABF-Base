@@ -14,6 +14,6 @@ export class AppComponent {
 
 	constructor(
 		public fireCorx: FireCorx,
-		public castlotsCorx: CastlotsCorx 
+		public castlotsCorx: CastlotsCorx
 	) {}	
 }
