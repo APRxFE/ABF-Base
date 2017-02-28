@@ -1,3 +1,6 @@
 [submodule "ngModules/FireCorx"]
 	path = ngModules/FireCorx
 	url = https://github.com/APRxFE/FireCorx.git
+[submodule "ngModules/CastlotsCorx"]
+	path = ngModules/CastlotsCorx
+	url = https://github.com/APRxFE/CastlotsCorx.git
