@@ -1,6 +1,21 @@
-<template [ngIf]="!fireCorx.isAuth">
-	<button type="button" class="btn" (click)="fireCorx.login('google')">Login</button>
-</template>
-<template [ngIf]="fireCorx.isAuth">
-	<button type="button" class="btn" (click)="fireCorx.logout()">Logout</button>
-</template>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+	<a href="#" class="navbar-brand">NgbFb-Base</a>
+	<ul class="navbar-nav">
+		<li *ngIf="!fireCorx.isAuth" class="nav-item">
+			<a (click)="fireCorx.login('google')" href="#" class="nav-link">Login</a>
+		</li>
+		<li *ngIf="fireCorx.isAuth" class="nav-item">
+			<a (click)="fireCorx.logout()" href="#" class="nav-link">Logout</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>Hello, NgbFb-Base</h1>
+	</div>
+	<footer>
+		<h5>https://github.com/APRxFE</h5>
+		<p>aprxfe@gmail.com</p>
+	</footer>
+</div>
