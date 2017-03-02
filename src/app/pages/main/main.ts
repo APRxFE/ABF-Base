@@ -7,23 +7,21 @@ import { CastlotsCorx } from '../../../../ngModules/CastlotsCorx'
 
 
 @Component({
-	selector: 'app-home-page',
-	styleUrls: ['./home.scss'],
-	templateUrl: './home.html'
+	selector: 'app-main-page',
+	styleUrls: ['./main.scss'],
+	templateUrl: './main.html'
 })
-export class HomePage implements OnInit, OnDestroy {
+export class MainPage implements OnInit, OnDestroy {
 
 	constructor(
 		public fireCorx: FireCorx,
 		public castlotsCorx: CastlotsCorx 		
-	) {
-		
-	}
+	) {}
 
 	public ngOnInit() {
 	}
 
-	public ngOnDestroy(){
+	public ngOnDestroy() {
 	}
 
 }

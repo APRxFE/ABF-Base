@@ -11,6 +11,8 @@ import { environment } from '../environments/environment' // Firebase Config
 import { FireCorxModule } from '../../ngModules/FireCorx'
 import { CastlotsCorxModule } from '../../ngModules/CastlotsCorx'
 
+///// Modules /////
+
 let modules: any[] = [
 	BrowserModule, FormsModule, HttpModule, RouterModule,
 	NgbModule.forRoot(),
@@ -20,6 +22,10 @@ let modules: any[] = [
 	CastlotsCorxModule
 ]
 
+///// Widgets /////
+
+import { AppComponent } from './app.component'
+
 import { AppHeaderComp } from './widgets/app-header'
 import { AppFooterComp } from './widgets/app-footer'
 
@@ -28,12 +34,12 @@ let widgets = [
 	AppHeaderComp, AppFooterComp
 ]
 
-import { AppComponent } from './app.component'
+///// Pages /////
 
-import { HomePage } from './pages/home/home'
+import { MainPage } from './pages/main/main'
 
 let pages = [
-	HomePage
+	MainPage
 ]
 
 import { routing } from './app.routes'
