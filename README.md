@@ -7,3 +7,7 @@ Angular + Bootstrap + Firebase
 - @ng-bootstrap/ng-bootstrap **1.0.0-alpha.20**
 - bootstrap **4.0.0-alpha.6**
 - angularfire2 **2.0.0-beta.8**
+
+### ngModules
+
+- [FireCorx](https://github.com/APRxFE/FireCorx.git)
