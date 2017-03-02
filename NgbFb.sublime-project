@@ -1,0 +1,12 @@
+{
+	"folders":
+	[
+		{ "name": "src", "path": "src" },
+		{ "name": "ngModules", "path": "ngModules" }
+	],
+	"settings":
+	{
+		"default_encoding": "UTF-8",
+		"tab_size": 1
+	}
+}
