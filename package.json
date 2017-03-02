@@ -2,6 +2,10 @@
 	"name": "NgbFb-Base",
 	"version": "2.4.8",
 	"license": "MIT",
+	"author": { 
+		"name": "APRxFE", 
+		"email": "aprxfe@gmail.com" 
+	}, 
 	"angular-cli": {},
 	"scripts": {
 		"start": "ng serve",
