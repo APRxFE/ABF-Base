@@ -20,6 +20,14 @@ let modules: any[] = [
 	CastlotsCorxModule
 ]
 
+import { AppHeaderComp } from './widgets/app-header'
+import { AppFooterComp } from './widgets/app-footer'
+
+let widgets = [
+	AppComponent,
+	AppHeaderComp, AppFooterComp
+]
+
 import { AppComponent } from './app.component'
 
 import { HomePage } from './pages/home/home'
@@ -32,7 +40,7 @@ import { routing } from './app.routes'
 
 @NgModule({
 	bootstrap: [AppComponent],
-	declarations: [ AppComponent, ...pages ],
+	declarations: [ ...widgets, ...pages ],
 	imports: [ ...modules, routing ]
 })
 export class AppModule {}

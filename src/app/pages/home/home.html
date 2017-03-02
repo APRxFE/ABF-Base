@@ -1,21 +1,8 @@
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-	<a href="#" class="navbar-brand">NgbFb-Base</a>
-	<ul class="navbar-nav">
-		<li *ngIf="!fireCorx.isAuth" class="nav-item">
-			<a (click)="fireCorx.login('google')" class="nav-link">Login</a>
-		</li>
-		<li *ngIf="fireCorx.isAuth" class="nav-item">
-			<a (click)="fireCorx.logout()" class="nav-link">Logout</a>
-		</li>
-	</ul>
-</nav>
+<app-header></app-header>
 
 <div class="container">
 	<div class="jumbotron">
 		<h1>Hello, NgbFb-Base</h1>
 	</div>
-	<footer>
-		<h5>https://github.com/APRxFE</h5>
-		<p>aprxfe@gmail.com</p>
-	</footer>
+	<app-footer></app-footer>
 </div>

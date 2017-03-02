@@ -1,0 +1,11 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+	<a href="#" class="navbar-brand">NgbFb-Base</a>
+	<ul class="navbar-nav">
+		<li *ngIf="!fireCorx.isAuth" class="nav-item">
+			<a (click)="fireCorx.login('google')" class="nav-link">Login</a>
+		</li>
+		<li *ngIf="fireCorx.isAuth" class="nav-item">
+			<a (click)="fireCorx.logout()" class="nav-link">Logout</a>
+		</li>
+	</ul>
+</nav>
